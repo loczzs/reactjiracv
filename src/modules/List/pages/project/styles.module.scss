@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+.bg{
+ 
+}
+.title {
+  padding: 50px;
+ 
+  
+}
+.cssform{
+  width: 100%;
+  padding: 3px 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  resize: none;
+  select{
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+.form{
+  div{
+    margin-bottom: 15px;
+    input{
+      width: 100%;
+      padding: 3px 10px;
+      border: 1px solid gray;
+      border-radius: 7px;
+      resize: none;
+    }
+  }
+}
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1024px){}
+
+@media screen and (max-width: 992px){
+  .title{
+    padding: 0;
+    padding-top: 15px;
+    div{
+      
+      // padding: 0;
+      width: 90%;
+      form{
+        div{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .title{
+    padding: 0;
+    padding-top: 15px;
+    div{
+      
+      // padding: 0;
+      width: 90%;
+      form{
+        div{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+ .title{
+    padding: 0;
+    padding-top: 15px;
+    div{
+      
+      // padding: 0;
+      width: 90%;
+      form{
+        div{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px){
+  .title{
+    padding: 0;
+    padding-top: 15px;
+    div{
+      
+      // padding: 0;
+      width: 90%;
+      form{
+        div{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
