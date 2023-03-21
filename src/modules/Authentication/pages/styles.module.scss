@@ -1,4 +1,92 @@
- body{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.bg{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contain{
+  width: 50% ;
+  margin: auto ;
+  padding: 50px;
+  background-color: white;
+
+  border-radius: 10px;
+}
+.contain2{
+  // background-color: red;
+  width: 50% ;
+  margin: auto ;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  border-radius: 10px;
+}
+.inputbox{
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+.inputbox {
+  input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    
+    
+  }
+  span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: gray;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+  color: rgb(0, 81, 255);
+  transform: translateX(10px) translateY(-10px);
+  font-size: 0.75em;
+  padding: 0 10px;
+  background: white;
+}
+.inputbox input:valid ,
+.inputbox input:focus 
+{
+  border: 1px solid rgb(0, 81, 255); 
+}
+
+.pauth{
+  color: red;
+  
+}
+@media screen and (max-width: 750px) {
+  .contain2{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .contain{
+    width: 95%;
+  }
+}
+body{
   padding: 0;
   margin: 0;
   font-family: montserrat;
@@ -10,9 +98,8 @@
   h1 {
     text-align: center;
     padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
     font-weight: 700;
-    color: white;
+    color: black;
   }
   .styless {
     display: flex;
