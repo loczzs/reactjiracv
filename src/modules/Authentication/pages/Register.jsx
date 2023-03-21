@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { notification } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { registers } from "../slices/authSlice";
-import scss from "./style.module.scss";
+import scss from "./styles.module.scss";
 
 const Register = () => {
   const {
@@ -46,15 +46,16 @@ const Register = () => {
 
   return (
     <div className={scss.center}>
-      <div>
-        <div>
-          <h1 className={scss.h1}>Đăng ký</h1>
+      <div  className={scss.bg}>
+        <div className={scss.contain} >
+          <h1 className="mb-3 text-center">Đăng ký</h1>
           <form
             onSubmit={handleSubmit(onSubmit, onError)}
             className={scss.form}
           >
-            <div className={scss.field}>
+            <div className={scss.inputbox}>
               <input
+               required="required"
                 type="text"
                 {...register("email", {
                   required: {
@@ -68,14 +69,14 @@ const Register = () => {
                   },
                 })}
               />
-              <span></span>
-              <label>Email</label>
+              <span>Email</span>
               {errors.email && (
                 <p style={{ color: "red" }}>{errors.email.message}</p>
               )}
             </div>
-            <div className={scss.field}>
+            <div className={scss.inputbox}>
               <input
+               required="required"
                 type="password"
                 {...register("passWord", {
                   required: {
@@ -88,15 +89,15 @@ const Register = () => {
                   },
                 })}
               />
-              <span></span>
-              <label>Password</label>
+              <span>Password</span>
               {errors.passWord && (
                 <p style={{ color: "red" }}>{errors.passWord.message}</p>
               )}
             </div>
 
-            <div className={scss.field}>
+            <div  className={scss.inputbox} >
               <input
+               required="required"
                 type="text"
                 {...register("name", {
                   required: {
@@ -105,15 +106,15 @@ const Register = () => {
                   },
                 })}
               />
-              <span></span>
-              <label>Fullname</label>
+              <span>Fullname</span>
               {errors.name && (
                 <p style={{ color: "red" }}>{errors.name.message}</p>
               )}
             </div>
 
-            <div className={scss.field}>
+            <div  className={scss.inputbox} >
               <input
+               required="required"
                 type="text"
                 {...register("phoneNumber", {
                   required: {
@@ -122,8 +123,7 @@ const Register = () => {
                   },
                 })}
               />
-              <span></span>
-              <label>PhoneNumber</label>
+              <span>PhoneNumber</span>
               {errors.phoneNumber && (
                 <p style={{ color: "red" }}>{errors.phoneNumber.message}</p>
               )}
